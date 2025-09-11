@@ -23,7 +23,7 @@ export default function ProjectsPage() {
     <div>
       <h1 className="text-4xl font-bold">My Projects</h1>
       <p className="mt-4 text-lg">
-        Here are some of the projects I've worked on.
+        Here are some of the projects I have worked on.
       </p>
 
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
