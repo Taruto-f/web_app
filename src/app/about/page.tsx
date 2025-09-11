@@ -44,7 +44,7 @@ export default function AboutPage() {
     <div>
       <h1 className="text-4xl font-bold">About Me</h1>
       <p className="mt-4 text-lg">
-        I'm a passionate developer who loves building things for the web. Here are some of my social media links.
+        I&apos;m a passionate developer who loves building things for the web. Here are some of my social media links.
       </p>
 
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
