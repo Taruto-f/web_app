@@ -1,4 +1,4 @@
-import { Briefcase, Home, Inbox, Search, Settings, User } from "lucide-react"
+import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
 
 import {
   Sidebar,
@@ -10,41 +10,40 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
-import { AnimatedThemeToggler } from "./magicui/animated-theme-toggler"
 
 // Menu items.
 const items = [
   {
     title: "Home",
-    url: "/",
+    url: "#",
     icon: Home,
   },
   {
     title: "About me",
-    url: "/about",
-    icon: User,
+    url: "#",
+    icon: Inbox,
   },
   {
     title: "My projects",
-    url: "/projects",
-    icon: Briefcase,
+    url: "#",
+    icon: Calendar,
   },
   {
     title: "Search",
-    url: "/search",
+    url: "#",
     icon: Search,
   },
   {
     title: "Settings",
-    url: "/setting",
+    url: "#",
     icon: Settings,
   },
 ]
 
 export function AppSidebar() {
   return (
-    <Sidebar className="flex flex-col">
-      <SidebarContent className="flex-grow">
+    <Sidebar>
+      <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Application</SidebarGroupLabel>
           <SidebarGroupContent>
@@ -63,9 +62,6 @@ export function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      <div className="p-4">
-        <AnimatedThemeToggler />
-      </div>
     </Sidebar>
   )
 }
