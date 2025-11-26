@@ -55,7 +55,7 @@ export default function Home() {
 
         <BlurFade delay={0.45} inView>
           <div className="text-2xl md:text-4xl font-semibold text-neutral-700 dark:text-neutral-300">
-            I'm a{" "}
+            I&apos;m a{" "}
             <WordRotate
               className="text-purple-600 dark:text-purple-400"
               words={["Developer", "Creator", "Designer", "Student"]}
