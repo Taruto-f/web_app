@@ -1,5 +1,6 @@
 "use client";
 import SplitText from "@/components/ui/SplitText";
+import { Meteors } from "@/components/ui/meteors";
 
 export default function Home() {
   const handleAnimationComplete = () => {
@@ -7,10 +8,11 @@ export default function Home() {
   };
 
   return (
-    <div className="flex items-center justify-center h-full">
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background">
+      <Meteors number={30} />
       <SplitText
         text="Taruto-fのウェブサイトへようこそ"
-        className="text-4xl font-bold"
+        className="text-4xl font-bold z-10"
         delay={100}
         duration={0.6}
         ease="power3.out"
